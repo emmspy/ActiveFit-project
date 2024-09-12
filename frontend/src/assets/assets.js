@@ -2,13 +2,18 @@ import cross_icon from './cross.png'
 import logo_green from './Logo.png'
 import hamburguer_menu from './menuIcon.webp'
 import logo_white from './whiteLogo.png'
-
+import drop_down from './dropdown.png'
+import user_picture from './userPicture.webp'
+import arrow_icon from './Arrow.png'
 
 export const assets = {
     cross_icon,
     logo_green,
     logo_white,
     hamburguer_menu,
+    drop_down,
+    user_picture,
+    arrow_icon,
 }
 
 let exercise_array = [
