@@ -13,6 +13,9 @@ export default {
         'secondary-blue' : '#D6E0E2',
         'dark-blue' : '#162A2B',
         'storm-cloud' : '#686867',
+      },
+      gridTemplateColumns:{
+        'auto': 'repeat(auto-fill, minmax(200px, 1fr))'
       }
     },
   },

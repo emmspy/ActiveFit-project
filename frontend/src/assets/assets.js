@@ -5,6 +5,7 @@ import logo_white from './whiteLogo.png'
 import drop_down from './dropdown.png'
 import user_picture from './userPicture.webp'
 import arrow_icon from './Arrow.png'
+import image from './headerbg.jpg'
 
 export const assets = {
     cross_icon,
@@ -16,58 +17,44 @@ export const assets = {
     arrow_icon,
 }
 
-let exercise_array = [
+export const exercise_array = [
     {
         exercise: "Yoga",
-        image: "image"
+        image: image
     },
     {
         exercise: "Cycling",
-        image: "image"
+        image: image
     },
     {
-        exercise: "Swimming",
-        image: "image"},
-    {
         exercise: "Running",
-        image: "image"
+        image: image
     },
     {
         exercise: "Pilates",
-        image: "image"
+        image: image
     },
     {
         exercise: "Boxing",
-        image: "image"
-    },
-    {
-        exercise: "Rowing",
-        image: "image"
+        image: image
     },
     {
         exercise: "Dancing",
-        image: "image"
+        image: image
     },
-    {
-        exercise: "Hiking",
-        image: "image"
-    },
-    {
-        exercise: "CrossFit",
-        image: "image"}
 ];
 
-let classesArray = [
-    {id: 1, instructor: "Ana Lopez", image: "yoga.jpg", exercise: "Yoga", schedule: "Lunes 8:00 AM", price: 15, address: "Calle 123, Ciudad A"},
-    {id: 2, instructor: "Carlos Diaz", image: "cycling.jpg", exercise: "Cycling", schedule: "Martes 6:30 PM", price: 20, address: "Avenida 456, Ciudad B"},
-    {id: 3, instructor: "Lucia Fernandez", image: "swimming.jpg", exercise: "Swimming", schedule: "Miércoles 7:00 AM", price: 18, address: "Plaza 789, Ciudad C"},
-    {id: 4, instructor: "Sofia Gomez", image: "running.jpg", exercise: "Running", schedule: "Jueves 6:00 PM", price: 10, address: "Parque 101, Ciudad D"},
-    {id: 5, instructor: "Maria Perez", image: "pilates.jpg", exercise: "Pilates", schedule: "Viernes 9:00 AM", price: 22, address: "Calle 202, Ciudad E"},
-    {id: 6, instructor: "Luis Torres", image: "boxing.jpg", exercise: "Boxing", schedule: "Sábado 5:00 PM", price: 25, address: "Avenida 303, Ciudad F"},
-    {id: 7, instructor: "Camila Ramos", image: "rowing.jpg", exercise: "Rowing", schedule: "Domingo 8:00 AM", price: 20, address: "Río 404, Ciudad G"},
-    {id: 8, instructor: "Miguel Alvarez", image: "dancing.jpg", exercise: "Dancing", schedule: "Lunes 7:00 PM", price: 15, address: "Plaza 505, Ciudad H"},
-    {id: 9, instructor: "Paula Ortega", image: "hiking.jpg", exercise: "Hiking", schedule: "Sábado 8:00 AM", price: 30, address: "Montaña 606, Ciudad I"},
-    {id: 10, instructor: "Jorge Reyes", image: "crossfit.jpg", exercise: "CrossFit", schedule: "Viernes 6:30 PM", price: 28, address: "Gimnasio 707, Ciudad J"}
+export const classesArray = [
+    {id: 1,name:"clase de ...", instructor: "Ana Lopez", image: image, exercise: "Yoga", schedule: "Lunes 8:00 AM", price: 15, address: "Calle 123, Ciudad A"},
+    {id: 2,name:"clase de ...", instructor: "Carlos Diaz", image: image, exercise: "Cycling", schedule: "Martes 6:30 PM", price: 20, address: "Avenida 456, Ciudad B"},
+    {id: 3,name:"clase de ...", instructor: "Lucia Fernandez", image: image, exercise: "Swimming", schedule: "Miércoles 7:00 AM", price: 18, address: "Plaza 789, Ciudad C"},
+    {id: 4,name:"clase de ...", instructor: "Sofia Gomez", image: image, exercise: "Running", schedule: "Jueves 6:00 PM", price: 10, address: "Parque 101, Ciudad D"},
+    {id: 5,name:"clase de ...", instructor: "Maria Perez", image: image, exercise: "Pilates", schedule: "Viernes 9:00 AM", price: 22, address: "Calle 202, Ciudad E"},
+    {id: 6,name:"clase de ...", instructor: "Luis Torres", image: image, exercise: "Boxing", schedule: "Sábado 5:00 PM", price: 25, address: "Avenida 303, Ciudad F"},
+    {id: 7,name:"clase de ...", instructor: "Camila Ramos", image: image, exercise: "Rowing", schedule: "Domingo 8:00 AM", price: 20, address: "Río 404, Ciudad G"},
+    {id: 8,name:"clase de ...", instructor: "Miguel Alvarez", image: image, exercise: "Dancing", schedule: "Lunes 7:00 PM", price: 15, address: "Plaza 505, Ciudad H"},
+    {id: 9,name:"clase de ...", instructor: "Paula Ortega", image: image, exercise: "Hiking", schedule: "Sábado 8:00 AM", price: 30, address: "Montaña 606, Ciudad I"},
+    {id: 10,name:"clase de ...", instructor: "Jorge Reyes", image: image, exercise: "CrossFit", schedule: "Viernes 6:30 PM", price: 28, address: "Gimnasio 707, Ciudad J"}
 ];
 
 
