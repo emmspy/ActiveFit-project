@@ -6,6 +6,8 @@ import drop_down from './dropdown.png'
 import user_picture from './userPicture.webp'
 import arrow_icon from './Arrow.png'
 import image from './headerbg.jpg'
+import aboutus from './aboutus.jpg'
+import contactanos from './contactanos.jpg'
 
 export const assets = {
     cross_icon,
@@ -15,6 +17,8 @@ export const assets = {
     drop_down,
     user_picture,
     arrow_icon,
+    aboutus,
+    contactanos,
 }
 
 export const exercise_array = [

@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
 import React, { useState, useEffect, useContext } from 'react'
+import TopClases from "../components/TopClasses";
 
 const Book = () => {
 
@@ -62,13 +63,13 @@ const Book = () => {
       const endTime = new Date(currentDate).setHours(21, 0, 0, 0);
       const timeSlots = [];
   
-      // Generar intervalos de 60 minutos hasta las 9:00 PM
+      // Generar intervalos de 120 minutos hasta las 9:00 PM
       while (currentDate < endTime) {
         timeSlots.push({
           datetime: new Date(currentDate),
           time: currentDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
         });
-        currentDate.setMinutes(currentDate.getMinutes() + 60);
+        currentDate.setMinutes(currentDate.getMinutes() + 120);
       }
   
       setClassDay(prev => [...prev, timeSlots]);
@@ -119,9 +120,39 @@ const Book = () => {
 
 
 {/* reserva de la clase */}
+      <div className='sm:pl-4 mt-10 font-medium'>
+        <p className='font-medium mb-0.5'>Horarios de clase</p>
+        <div className='flex gap-8 mt-5 items-center w-full overflow-x-scroll'>
+          {
+            ClassDay.length && ClassDay.map((item, index) =>(
+              <div onClick={ () => setDayIndex(index) } key={index} className={` font-light bg-primary-cream text-primary-green text-sm text-center py-4 min-w-16 rounded-full cursor-pointer ${DayIndex === index ? ' bg-primary-green text-white' : " "}`}>
+                <p className='px-5'>{item[0]&& days[item[0].datetime.getDay()]}</p>
+                <p>{item[0]&& item[0].datetime.getDate()}</p>
+              </div>
+            ))
+          }
+        </div>
+        <div className='  flex items-center gap-5 w-full overflow-x-scroll mt-4'>
+          {ClassDay.length && ClassDay[DayIndex].map((item, index) => (
+            <p onClick={ () => (setDayTime(item.time)) } key={index} className={` bg-primary-cream text-primary-green flex text-sm font-light flex-shrink-0 px-5 py-3  rounded-full ${  item.time === DayTime ? ' bg-primary-green text-white' : " "}`}>
+              {item.time}
+            </p>
+          ) )}
+        </div>
 
-     <p> horario: {classInfo.schedule} </p>
-     <p> precio: {classInfo.price} </p>
+        {/* Hacer reserva*/}  
+        <div className=' flex items-center flex-col my-12'>
+            <p> <span className='font-light gap-5 my-5'>Precio de la clase:</span> $ {classInfo.price} </p>
+            <button className='bg-primary-green text-primary-cream rounded-full my-8 px-4 py-3'>
+              Hacer una reserva
+            </button>     
+        </div>
+
+      </div>
+
+
+{/* mostrar mas clases */}
+      <TopClases/>
 
     </div>
   )
