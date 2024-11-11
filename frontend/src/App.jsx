@@ -10,6 +10,7 @@ import MyProfile from './pages/MyProfile'
 import Book from './pages/Book'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import MyBooks from './pages/MyBooks'
 
 const App = () => {
   return (
@@ -24,7 +25,7 @@ const App = () => {
         <Route path='/contact' element= {<Contact/>}/>
         <Route path='/login' element= {<Login/>}/>
         <Route path='/my-profile' element= {<MyProfile/>}/>
-        <Route path='/my-books' element= {<Login/>}/>
+        <Route path='/my-books' element= {<MyBooks/>}/>
         {/* redireccion para una bookear una clase  */}
         <Route path='/book/:id' element= {<Book/>}/>
       </Routes>
