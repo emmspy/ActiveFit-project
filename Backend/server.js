@@ -13,7 +13,7 @@ app.use(cors())
 
 //api endpoints
 app.get('/',(req, res)=>(
-    res.send('api funcionando')
+    res.send('modificacion')
 ))
 
 app.listen(port, ()=> console.log("server", port))
