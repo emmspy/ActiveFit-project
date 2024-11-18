@@ -3,6 +3,7 @@ import cors from 'cors'
 import 'dotenv/config'
 import connectDB from './Config/mongodb.js'
 import connectCloudinary from './Config/cloundinary.js'
+import instructorRouter from './Routes/instructorRouter.js'
 
 
 //app config
@@ -15,7 +16,12 @@ connectCloudinary()
 app.use(express.json())
 app.use(cors())
 
-//api endpoints
+
+{/*api endpoints*/}
+
+app.use('/api/instructor',instructorRouter)
+//localhost:4000/api/instructor/add-instructor
+
 app.get('/',(req, res)=>(
     res.send('Holaaa')
 ))
