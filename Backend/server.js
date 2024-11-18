@@ -19,8 +19,10 @@ app.use(cors())
 
 {/*api endpoints*/}
 
-app.use('/api/instructor',instructorRouter)
+//agregar instructor
 //localhost:4000/api/instructor/add-instructor
+app.use('/api/instructor',instructorRouter)
+
 
 app.get('/',(req, res)=>(
     res.send('Holaaa')
