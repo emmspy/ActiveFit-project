@@ -4,6 +4,7 @@ import 'dotenv/config'
 import connectDB from './Config/mongodb.js'
 import connectCloudinary from './Config/cloundinary.js'
 import instructorRouter from './Routes/instructorRouter.js'
+import classesRouter from './Routes/classesRouter.js'
 
 
 //app config
@@ -23,6 +24,9 @@ app.use(cors())
 //localhost:4000/api/instructor/add-instructor
 app.use('/api/instructor',instructorRouter)
 
+//Agregar una clase 
+//localhost:4000/api/classes/add-classes
+app.use('/api/classes',classesRouter)
 
 app.get('/',(req, res)=>(
     res.send('Holaaa')

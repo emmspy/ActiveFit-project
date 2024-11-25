@@ -45,6 +45,8 @@ const onSubmitHandler = (e)=> {
             ? <p className='font-light my-3 italic'>Ya tienes una cuenta? <span className='font-semibold' onClick={()=> setChangelog('login')}> Registrase </span></p>
             : <p className='font-light my-3 italic' >Aun no tienes una cuenta? <span className='font-semibold'  onClick={()=> setChangelog('Sign up')} >Crear cuenta</span></p>
           }
+          <p className='font-light my-3 italic'> Crear cuenta como instructor <span className='font-semibold' onClick={()=> setChangelog('login')}> Registrase </span></p>
+          <p className='font-light my-3 italic'>Logear como instructor<span className='font-semibold'  onClick={()=> setChangelog('Sign up')} >Crear cuenta</span></p>
         </div>
       </form>
     </div>
